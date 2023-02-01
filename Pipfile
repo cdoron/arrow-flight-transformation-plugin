@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://test.pypi.org/simple"
+verify_ssl = true
+name = "testpypi"
+
+[packages]
+#fybrik_python_transformation = {path = "/home/cdoron/work/python/transformation"}
+fybrik_python_transformation = {index="testpypi"}
+pyarrow = "==8.0.0"
+python-dateutil = "==2.8.2"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
